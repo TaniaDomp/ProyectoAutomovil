@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProyectoAutomovil.Alta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoAutomovil"
+        mc:Ignorable="d"
+        Title="Alta" Height="450" Width="800">
+    <Grid>
+        <Label Content="Marca" HorizontalAlignment="Left" Margin="41,50,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Submarca" HorizontalAlignment="Left" Margin="41,110,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Año" HorizontalAlignment="Left" Margin="41,170,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Emisiones CO2 (kg/km)" HorizontalAlignment="Left" Margin="41,230,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Emisiones NOx (Kg/Km)" HorizontalAlignment="Left" Margin="41,290,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Emisión anual de CO2" HorizontalAlignment="Left" Margin="41,350,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtMarca" HorizontalAlignment="Left" Height="35" Margin="325,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtSubmarca" HorizontalAlignment="Left" Height="35" Margin="325,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtAnio" HorizontalAlignment="Left" Height="35" Margin="325,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtECO2" HorizontalAlignment="Left" Height="35" Margin="325,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtNOx" HorizontalAlignment="Left" Height="35" Margin="325,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <TextBox x:Name="txtEACO2" HorizontalAlignment="Left" Height="35" Margin="325,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Button x:Name="btAlta" Content="Alta" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" Height="50" FontSize="20"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="631,215,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" FontSize="20" Click="btRegresar_Click" Height="50"/>
+
+    </Grid>
+</Window>
