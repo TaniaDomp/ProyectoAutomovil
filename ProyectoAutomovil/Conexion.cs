@@ -17,12 +17,14 @@ namespace ProyectoAutomovil
             {
                 cnn = new SqlConnection("Data Source=LAPTOP-5V05KTCM;Initial Catalog=DBPAuto;Integrated Security=True");
                 cnn.Open();
-                MessageBox.Show("conectado");
+                //mensaje para revisar si la conexion a la base fue exitosa
+                //MessageBox.Show("conectado");
             }
             catch (Exception ex)
             {
                 cnn = null;
-                MessageBox.Show("no se pudo conectar" + ex);
+                //mensaje para revisar si la conexion a la base tuvo problemas 
+                //MessageBox.Show("no se pudo conectar" + ex);
             }
             return cnn;
         }

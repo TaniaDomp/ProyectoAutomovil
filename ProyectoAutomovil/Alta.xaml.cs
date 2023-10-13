@@ -39,7 +39,7 @@ namespace ProyectoAutomovil
             submarca = txtSubmarca.Text;
             anioModelo = int.Parse(txtAnio.Text);
             //el id se genera con las tres primeras letras de la marca + submarca + anio
-            idAut = marca.Substring(0, 3) + submarca + anioModelo;
+            idAut = marca.Substring(0, 3) + "-"+ submarca + "-" + anioModelo;
             emisionCO2 = float.Parse(txtECO2.Text);
             emisionNOx = float.Parse(txtNOx.Text);
             emisionAnualCO2 = float.Parse(txtEACO2.Text);
@@ -48,6 +48,12 @@ namespace ProyectoAutomovil
             if(res > 0)
             {
                 MessageBox.Show("Alta exitosa");
+                txtMarca.Text = "";
+                txtSubmarca.Text = "";
+                txtAnio.Text = "";
+                txtECO2.Text = "";
+                txtNOx.Text = "";
+                txtEACO2.Text = "";
             }
             else
             {
