@@ -19,7 +19,7 @@
         <TextBox x:Name="txtECO2" HorizontalAlignment="Left" Height="35" Margin="325,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtNOx" HorizontalAlignment="Left" Height="35" Margin="325,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtEACO2" HorizontalAlignment="Left" Height="35" Margin="325,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
-        <Button x:Name="btAlta" Content="Alta" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" Height="50" FontSize="20"/>
+        <Button x:Name="btAlta" Content="Alta" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" Height="50" FontSize="20" Click="btAlta_Click"/>
         <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="631,215,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" FontSize="20" Click="btRegresar_Click" Height="50"/>
 
     </Grid>

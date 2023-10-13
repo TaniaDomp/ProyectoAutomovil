@@ -28,5 +28,31 @@ namespace ProyectoAutomovil
         {
 
         }
+
+        private void btAlta_Click(object sender, RoutedEventArgs e)
+        {
+            int res, anioModelo;
+            string idAut, marca, submarca;
+            float emisionCO2, emisionNOx, emisionAnualCO2;
+
+            marca = txtMarca.Text;
+            submarca = txtSubmarca.Text;
+            anioModelo = int.Parse(txtAnio.Text);
+            //el id se genera con las tres primeras letras de la marca + submarca + anio
+            idAut = marca.Substring(0, 3) + submarca + anioModelo;
+            emisionCO2 = float.Parse(txtECO2.Text);
+            emisionNOx = float.Parse(txtNOx.Text);
+            emisionAnualCO2 = float.Parse(txtEACO2.Text);
+            Auto a = new Auto(idAut, marca, submarca, anioModelo, emisionCO2, emisionNOx, emisionAnualCO2);
+            res = a.agregarAuto(a);
+            if(res > 0)
+            {
+                MessageBox.Show("Alta exitosa");
+            }
+            else
+            {
+                MessageBox.Show("Error en el alta");
+            }
+        }
     }
 }
