@@ -26,7 +26,8 @@ namespace ProyectoAutomovil
 
         private void btRegresar_Click(object sender, RoutedEventArgs e)
         {
-
+            Operaciones o = new Operaciones();
+            o.Show();
         }
 
         private void btAlta_Click(object sender, RoutedEventArgs e)
