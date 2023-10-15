@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-       
+        Title="MainWindow" Height="274" Width="460">
+    <Grid Margin="0,0,115,65">
+        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="323,167,-86,-34" VerticalAlignment="Top" Width="100" Click="Button_Click" Height="45" FontSize="25" />
+        <Label Content="Usuario :" HorizontalAlignment="Left" Margin="66,65,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <Label Content="Contraseña :" HorizontalAlignment="Left" Margin="25,126,0,0" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox x:Name="txUsuario" HorizontalAlignment="Left" Height="32" Margin="177,76,-22,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" RenderTransformOrigin="0.725,1.217" FontSize="20"/>
+        <TextBox x:Name="txPassword" HorizontalAlignment="Left" Height="33" Margin="177,135,-22,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20"/>
+
 
     </Grid>
 </Window>

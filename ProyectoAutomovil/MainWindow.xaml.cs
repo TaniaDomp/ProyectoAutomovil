@@ -25,5 +25,26 @@ namespace ProyectoAutomovil
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int resp;
+            resp = Conexion.ProbarContra(txUsuario.Text, txPassword.Text);
+            if (resp == 1)
+            {
+                Operaciones o = new Operaciones();
+                o.Show();
+            }
+            else
+            {
+                if (resp == 2)
+
+                    MessageBox.Show("Contraseña incorrecta");
+                else
+                    MessageBox.Show("Usuario no encontrado");
+
+            }
+        }
     }
-}
+    }
+
+
