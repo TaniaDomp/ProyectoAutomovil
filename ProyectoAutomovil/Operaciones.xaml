@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProyectoAutomovil.Operaciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoAutomovil"
+        mc:Ignorable="d"
+        Title="Operaciones" Height="450" Width="800">
+    <Grid>
+        <Button Content="Alta" Margin="324,45,322,0" VerticalAlignment="Top" FontSize="35" Height="58" Click="Button_Click"/>
+        <Button Content="Baja" Margin="324,141,322,0" VerticalAlignment="Top" FontSize="35" Height="58" Click="Button_Click_1"/>
+        <Button Content="Buscar" Margin="324,237,322,0" VerticalAlignment="Top" FontSize="35" Height="58" Click="Button_Click_2"/>
+        <Button Content="Salir" Margin="324,328,322,0" VerticalAlignment="Top" FontSize="35" Height="58" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>

@@ -28,5 +28,34 @@ namespace ProyectoAutomovil
             }
             return cnn;
         }
+        public static int ProbarContra(String usu, String pwd)
+        {
+            int resp = 0;
+            SqlConnection con;
+            SqlDataReader dr;
+            SqlCommand cmd;
+            try
+            {
+                con = agregarConexion();
+                cmd = new SqlCommand(String.Format("select contrasenia from Usuario where nombreP='{0}'", usu), con);
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                    if (dr.GetString(0).Equals(pwd))
+                        resp = 1;// correcto todo
+
+                    else
+                        resp = 2;//contraseña incorrecta
+                else
+                    resp = 3;//usuario no encontrado
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+
+            }
+
+            return resp;
+        }
     }
 }
