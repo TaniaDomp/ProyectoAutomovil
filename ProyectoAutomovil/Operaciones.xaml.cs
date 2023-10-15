@@ -32,16 +32,20 @@ namespace ProyectoAutomovil
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Baja b = new Baja();
-           b.Show();
+            //Baja b = new Baja();
+            //b.Show();
+            Alta a = new Alta();
+            a.Show();
 
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Buscar u = new Buscar();
-            u.Show();
+            //Buscar u = new Buscar();
+            //u.Show();
+            Alta a = new Alta();
+            a.Show();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

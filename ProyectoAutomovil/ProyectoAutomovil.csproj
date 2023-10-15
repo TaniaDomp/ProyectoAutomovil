@@ -72,6 +72,11 @@
     </Compile>
     <Compile Include="Auto.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBPAutoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,16 +112,21 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DBPAutoDataSet.xsc">
-      <DependentUpon>DBPAutoDataSet.xsd</DependentUpon>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="DBPAutoDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DBPAutoDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </None>
-    <None Include="DBPAutoDataSet.xss">
-      <DependentUpon>DBPAutoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
