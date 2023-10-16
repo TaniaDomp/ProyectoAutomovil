@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -50,5 +50,39 @@ namespace ProyectoAutomovil
             con.Close();
             return res;
         }
+
+
+        public int eliminaAuto(int idA)
+        {
+            int res = 0;
+            SqlConnection con;
+            con = Conexion.agregarConexion();
+            SqlCommand cmd = new SqlCommand(String.Format(("delete from auto where idAut={0}"), idAut), con);
+            res = cmd.ExecuteNonQuery();
+            con.Close();
+            return res;
+        }
+
+        public List<Auto> buscarAuto()
+        {
+            List<Auto> lis = new List<Auto>();
+            Auto a;
+            SqlConnection con = Conexion.agregarConexion();
+            SqlCommand cmd= new SqlCommand(String.Format("select claveUnica, nombre, sexo, correo, semestre, idPrograma from Clase where nombre like  "%{0}"", nombre), con) ;
+            SqlDataReader dr=cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                a = new Auto();
+                a.idAut = dr.GetString(9);
+                a.marca = dr.GetString(10);
+                a.submarca = dr.GetString(10);
+                a.anioModelo = dr.GetInt16(0);
+                a.emisionCO2 = dr.GetFloat(10);
+                a.emisionNOx = dr.GetFloat(10);
+                a.emisionAnualCO2 = dr.GetFloat(10);
+            }
+            return lis;
+        }
+}
     }
 }
