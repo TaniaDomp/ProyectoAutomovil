@@ -59,6 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Baja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +75,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Auto.cs" />
+    <Compile Include="Baja.xaml.cs">
+      <DependentUpon>Baja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="DBPAutoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
