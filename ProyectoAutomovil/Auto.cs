@@ -50,5 +50,16 @@ namespace ProyectoAutomovil
             con.Close();
             return res;
         }
+
+        public int eliminaAuto(int idA)
+        {
+            int res = 0;
+            SqlConnection con;
+            con = Conexion.agregarConexion();
+            SqlCommand cmd = new SqlCommand(String.Format(("delete from auto where idAut={0}"), idAut), con);
+            res = cmd.ExecuteNonQuery();
+            con.Close();
+            return res;
+        }
     }
 }
