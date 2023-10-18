@@ -33,7 +33,8 @@ namespace ProyectoAutomovil
 
         private void Button_Click_1(object sender, RoutedEventArgs e)// boton regresar
         {
-
+Operaciones o = new Operaciones();
+            o.Show();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)// ignorar, no borrar
