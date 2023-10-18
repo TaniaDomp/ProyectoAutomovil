@@ -23,5 +23,21 @@ namespace ProyectoAutomovil
         {
             InitializeComponent();
         }
+
+        private void dgDatos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Operaciones o = new Operaciones();
+            o.Show();
+        }
     }
 }
