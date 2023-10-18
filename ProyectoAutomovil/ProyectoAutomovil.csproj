@@ -63,6 +63,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Buscar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +81,9 @@
     <Compile Include="Auto.cs" />
     <Compile Include="Baja.xaml.cs">
       <DependentUpon>Baja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar.xaml.cs">
+      <DependentUpon>Buscar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="DBPAutoDataSet.Designer.cs">
