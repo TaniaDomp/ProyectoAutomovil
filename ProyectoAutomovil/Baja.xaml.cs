@@ -28,6 +28,7 @@ namespace ProyectoAutomovil
         {
             Auto a = new Auto();
             int res = a.eliminaAuto(Int16.Parse(tbFolio.Text));
+
             if (res > 0)
                 MessageBox.Show("alumno eliminado");
         }
