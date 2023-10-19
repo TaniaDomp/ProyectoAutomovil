@@ -31,13 +31,15 @@ namespace ProyectoAutomovil
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Auto a = new Auto(TbID.Text);
+            dgDatos.ItemsSource = (System.Collections.IEnumerable)a.buscarCoche(a);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Operaciones o = new Operaciones();
             o.Show();
+            Hide();
         }
     }
 }

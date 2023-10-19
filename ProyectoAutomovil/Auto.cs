@@ -61,5 +61,29 @@ namespace ProyectoAutomovil
             con.Close();
             return res;
         }
+
+        public List<Auto> buscarCoche(Auto au)
+        {
+            List<Auto> lis = new List<Auto>();
+            Auto a;
+            SqlConnection con = Conexion.agregarConexion();
+            SqlCommand cmd = new SqlCommand(String.Format("select marca, submarca, AnioModelo, emisionCO2, emisionNOx, emisionAnualCO2 from Automovil where idAut = '{0}'", au.idAut), con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                a = new Auto();
+                a.idAut = au.idAut;
+                a.marca = dr.GetString(0);
+                a.submarca = dr.GetString(1);
+                a.anioModelo = dr.GetInt32(2);
+                a.emisionCO2 = (float)dr.GetDouble(3);
+                a.emisionNOx = (float)dr.GetDouble(4);
+                a.emisionAnualCO2 = (float)dr.GetDouble(5);
+                lis.Add(a);
+            }
+            con.Close();
+            return lis;
+        }
     }
 }

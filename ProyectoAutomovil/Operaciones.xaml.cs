@@ -48,7 +48,7 @@ namespace ProyectoAutomovil
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Close();
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
