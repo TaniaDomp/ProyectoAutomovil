@@ -37,7 +37,7 @@ namespace ProyectoAutomovil
             try
             {
                 con = agregarConexion();
-                cmd = new SqlCommand(String.Format("select contrasenia from Usuario where nombreP='{0}'", usu), con);
+                cmd = new SqlCommand(String.Format("select contrasenia from usuarioAdmin where nombreUsu='{0}'", usu), con);
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                     if (dr.GetString(0).Equals(pwd))

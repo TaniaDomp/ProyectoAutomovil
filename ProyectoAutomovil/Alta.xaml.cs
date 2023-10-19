@@ -28,6 +28,7 @@ namespace ProyectoAutomovil
         {
             Operaciones o = new Operaciones();
             o.Show();
+            Hide();
         }
 
         private void btAlta_Click(object sender, RoutedEventArgs e)

@@ -27,7 +27,7 @@ namespace ProyectoAutomovil
         private void btBaja_Click(object sender, RoutedEventArgs e)
         {
             Auto a = new Auto();
-            int res = a.eliminaAuto(Int16.Parse(tbFolio.Text));
+            int res = a.eliminaAuto(tbFolio.Text);
 
             if (res > 0)
                 MessageBox.Show("alumno eliminado");
@@ -37,6 +37,7 @@ namespace ProyectoAutomovil
         {
             Operaciones o = new Operaciones();
             o.Show();
+            Hide();
         }
     }
 }

@@ -33,6 +33,7 @@ namespace ProyectoAutomovil
             {
                 Operaciones o = new Operaciones();
                 o.Show();
+                Hide();
             }
             else
             {

@@ -51,12 +51,12 @@ namespace ProyectoAutomovil
             return res;
         }
 
-        public int eliminaAuto(int idA)
+        public int eliminaAuto(String idA)
         {
             int res = 0;
             SqlConnection con;
             con = Conexion.agregarConexion();
-            SqlCommand cmd = new SqlCommand(String.Format(("delete from auto where idAut={0}"), idAut), con);
+            SqlCommand cmd = new SqlCommand(String.Format(("delete from Automovil where idAut='{0}'"), idA), con);
             res = cmd.ExecuteNonQuery();
             con.Close();
             return res;

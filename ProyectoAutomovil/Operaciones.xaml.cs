@@ -28,13 +28,14 @@ namespace ProyectoAutomovil
         {
             Alta a = new Alta();
             a.Show();
+            Hide();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Baja b = new Baja();
            b.Show();
-
+            Hide();
 
         }
 
@@ -42,6 +43,7 @@ namespace ProyectoAutomovil
         {
             Buscar u = new Buscar();
             u.Show();
+            Hide();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
