@@ -23,5 +23,45 @@ namespace ProyectoAutomovil
         {
             InitializeComponent();
         }
+
+        private void btRegresar_Click(object sender, RoutedEventArgs e)
+        {
+            Operaciones o = new Operaciones();
+            o.Show();
+            Hide();
+        }
+
+        private void btModificar_Click(object sender, RoutedEventArgs e)
+        {
+            Auto a;
+            float emisionCO2, emisionNOx, emisionAnualCO2;
+            String idAut;
+            int res;
+
+            idAut = cbIdAu.SelectedValue.ToString();
+            emisionCO2 = float.Parse(txCO2.Text);
+            emisionNOx = float.Parse(txNOx.Text);
+            emisionAnualCO2 = float.Parse(txCO2Anual.Text);
+            a = new Auto(idAut, emisionCO2, emisionNOx, emisionAnualCO2);
+            res = a.modificaDatos(a);
+            if(res > 0)
+            {
+                MessageBox.Show("Modificacion exitosa");
+                Auto au = new Auto();
+                cbIdAu.Items.Clear();
+                au.autosSinDatos(dgDatAu, cbIdAu);
+            }
+            else
+            {
+                MessageBox.Show("Error en la modificacion");
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Auto a = new Auto();
+
+            a.autosSinDatos(dgDatAu, cbIdAu);
+        }
     }
 }

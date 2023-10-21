@@ -4,6 +4,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace ProyectoAutomovil
 {
@@ -33,6 +35,22 @@ namespace ProyectoAutomovil
             this.marca = marca;
             this.submarca = submarca;
             this.anioModelo = anioModelo;
+            this.emisionCO2 = emisionCO2;
+            this.emisionNOx = emisionNOx;
+            this.emisionAnualCO2 = emisionAnualCO2;
+        }
+
+        public Auto(string idAut, string marca, string submarca, int anioModelo) 
+        {
+            this.idAut = idAut;
+            this.marca = marca;
+            this.submarca = submarca;
+            this.anioModelo = anioModelo;
+        }
+
+        public Auto(string idAut, float emisionCO2, float emisionNOx, float emisionAnualCO2)
+        {
+            this.idAut = idAut;
             this.emisionCO2 = emisionCO2;
             this.emisionNOx = emisionNOx;
             this.emisionAnualCO2 = emisionAnualCO2;
@@ -84,6 +102,51 @@ namespace ProyectoAutomovil
             }
             con.Close();
             return lis;
+        }
+
+        public int modificaDatos(Auto a)
+        {
+            int res = 0;
+
+            SqlConnection con = Conexion.agregarConexion();
+            SqlCommand cmd = new SqlCommand(String.Format("UPDATE Automovil SET emisionCO2 = {0}, emisionNOx = {1}, emisionAnualCO2 = {2} WHERE idAut = '{3}'", a.emisionCO2, a.emisionNOx, a.emisionAnualCO2, a.idAut), con);
+            res = cmd.ExecuteNonQuery();
+            return res;
+        }
+
+        public void autosSinDatos(DataGrid dg, ComboBox cb)
+        {
+            try
+            {
+                List<Auto> lis = new List<Auto>();
+                Auto a;
+                SqlConnection con = Conexion.agregarConexion();
+                SqlCommand cmd = new SqlCommand("SELECT idAut, marca, submarca, AnioModelo FROM Automovil WHERE emisionCO2 IS NULL AND emisionNOx IS NULL AND emisionAnualCO2 IS NULL", con);
+                SqlDataReader rd = cmd.ExecuteReader();
+                while(rd.Read())
+                {
+                    a = new Auto();
+                    a.idAut = rd.GetString(0);
+                    a.marca = rd.GetString(1);
+                    a.submarca = rd.GetString(2);
+                    a.anioModelo = rd.GetInt32(3);
+                    lis.Add(a);
+                }
+                dg.ItemsSource = lis;
+                rd.Close();
+                SqlCommand cmd1 = new SqlCommand("SELECT idAut FROM Automovil WHERE emisionCO2 IS NULL AND emisionNOx IS NULL AND emisionAnualCO2 IS NULL", con);
+                SqlDataReader rd1 = cmd1.ExecuteReader();
+                while (rd1.Read())
+                {
+                    cb.Items.Add(rd1["idAut"].ToString());
+                }
+                rd1.Close();
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error en los datos");
+            }
         }
     }
 }

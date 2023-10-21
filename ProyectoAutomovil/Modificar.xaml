@@ -5,9 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="Modificar" Height="481.434" Width="905.882" Icon="coche-ecologico.png">
+        Title="Modificar" Height="520.231" Width="1152.771" Icon="coche-ecologico.png" Loaded="Window_Loaded">
     <Grid Background="#FFBBC0F4">
-        <Label Content="idAuto sin datos de emisiones" HorizontalAlignment="Left" Margin="54,59,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <Label Content="Autos sin datos de emisiones" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <DataGrid x:Name="dgDatAu" HorizontalAlignment="Left" Height="338" Margin="33,97,0,0" VerticalAlignment="Top" Width="384"/>
+        <Label Content="idAuto:" HorizontalAlignment="Left" Margin="470,50,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <Label Content="Emisiones CO2 (Kg/Km):" HorizontalAlignment="Left" Margin="470,130,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <Label Content="Emisiones NOx (Kg/Km):" HorizontalAlignment="Left" Margin="470,210,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <Label Content="Emisiones CO2 Anuales (Kg): " HorizontalAlignment="Left" Margin="470,290,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="25"/>
+        <ComboBox x:Name="cbIdAu" HorizontalAlignment="Left" Margin="795,50,0,0" VerticalAlignment="Top" Width="320" FontFamily="Segoe UI Light" FontSize="25" Height="50"/>
+        <TextBox x:Name="txCO2" HorizontalAlignment="Left" Height="50" Margin="795,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontFamily="Segoe UI Light" FontSize="25"/>
+        <TextBox x:Name="txNOx" HorizontalAlignment="Left" Height="50" Margin="795,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontFamily="Segoe UI Light" FontSize="25"/>
+        <TextBox x:Name="txCO2Anual" HorizontalAlignment="Left" Height="50" Margin="795,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" FontFamily="Segoe UI Light" FontSize="25"/>
+        <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="482,375,0,0" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="25" Height="60" Background="#FFCBF4F6" Click="btModificar_Click"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="823,375,0,0" VerticalAlignment="Top" Width="250" Height="60" FontFamily="Segoe UI Light" FontSize="25" Background="#FFCBF4F6" Click="btRegresar_Click"/>
 
     </Grid>
 </Window>

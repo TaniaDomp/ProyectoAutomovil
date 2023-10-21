@@ -50,5 +50,12 @@ namespace ProyectoAutomovil
         {
             System.Windows.Application.Current.Shutdown();
         }
+
+        private void btModificar_Click(object sender, RoutedEventArgs e)
+        {
+            Modificar mo = new Modificar();
+            mo.Show();
+            Hide();
+        }
     }
 }

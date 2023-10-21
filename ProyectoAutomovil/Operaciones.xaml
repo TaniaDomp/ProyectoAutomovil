@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Operaciones" Height="489.706" Width="800" Icon="coche-ecologico.png">
     <Grid Background="#FFBBC0F4">
-        <Button Content="Alta" Margin="65,41,478.6,0" VerticalAlignment="Top" FontSize="35" Height="80"  Click="Button_Click" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
-        <Button Content="Baja" Margin="472,192,71.6,0" VerticalAlignment="Top" FontSize="35" Height="80" Click="Button_Click_1" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
-        <Button Content="Buscar" Margin="65,192,478.6,0" VerticalAlignment="Top" FontSize="35" Height="80" Click="Button_Click_2" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
+        <Button Content="Alta" Margin="85,51,458.6,0" VerticalAlignment="Top" FontSize="35" Height="80"  Click="Button_Click" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
+        <Button Content="Baja" Margin="472,198,71.6,0" VerticalAlignment="Top" FontSize="35" Height="80" Click="Button_Click_1" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
+        <Button Content="Buscar" Margin="85,198,458.6,0" VerticalAlignment="Top" FontSize="35" Height="80" Click="Button_Click_2" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
         <Button Content="Salir" Margin="262,338,281.6,0" VerticalAlignment="Top" FontSize="35" Height="80" Click="Button_Click_3" Background="#FFCBF4F6" FontFamily="Segoe UI Light"/>
-        <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="472,41,0,0" VerticalAlignment="Top" Width="250" Height="80" Background="#FFCBF4F6" FontFamily="Segoe UI Light" FontSize="35"/>
+        <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="472,55,0,0" VerticalAlignment="Top" Width="250" Height="80" Background="#FFCBF4F6" FontFamily="Segoe UI Light" FontSize="35" Click="btModificar_Click"/>
 
     </Grid>
 </Window>

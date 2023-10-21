@@ -12,7 +12,7 @@
         <Label Content="Año" HorizontalAlignment="Left" Margin="41,170,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
         <Label Content="Emisiones CO2 (kg/km)" HorizontalAlignment="Left" Margin="41,230,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
         <Label Content="Emisiones NOx (Kg/Km)" HorizontalAlignment="Left" Margin="41,290,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
-        <Label Content="Emisión anual de CO2" HorizontalAlignment="Left" Margin="41,350,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
+        <Label Content="Emisión anual de CO2 (Kg)" HorizontalAlignment="Left" Margin="41,350,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtMarca" HorizontalAlignment="Left" Height="35" Margin="325,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtSubmarca" HorizontalAlignment="Left" Height="35" Margin="325,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtAnio" HorizontalAlignment="Left" Height="35" Margin="325,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
