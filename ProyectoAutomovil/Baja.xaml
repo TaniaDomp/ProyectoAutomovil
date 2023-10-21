@@ -5,20 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="Baja" Height="286" Width="482">
-    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,8,2">
-        <Grid.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform Angle="-0.03"/>
-                <TranslateTransform/>
-            </TransformGroup>
-        </Grid.RenderTransform>
-        <Label Content="IdAuto" HorizontalAlignment="Left" Margin="70,76,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <Button x:Name="btBaja" Content="Baja" HorizontalAlignment="Left" Margin="188,165,0,0" VerticalAlignment="Top" FontSize="30" Click="btBaja_Click"/>
-        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="270,164,0,0" VerticalAlignment="Top" FontSize="30" Click="btRegresar_Click"/>
-        <TextBox x:Name="tbFolio" HorizontalAlignment="Left" Margin="190,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203" FontSize="30"/>
+        Title="Baja" Height="286" Width="482" Icon="coche-ecologico.png">
+    <Grid Background="#FFBBC0F4">
+        <Label Content="IdAuto" HorizontalAlignment="Left" Margin="64,70,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Light"/>
+        <Button x:Name="btBaja" Content="Baja" HorizontalAlignment="Left" Margin="64,164,0,0" VerticalAlignment="Top" FontSize="30" Click="btBaja_Click" Width="150" Height="50" FontFamily="Segoe UI Light" Background="#FFCBF4F6"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="270,164,0,0" VerticalAlignment="Top" FontSize="30" Click="btRegresar_Click" Height="50" Width="150" FontFamily="Segoe UI Light" Grid.ColumnSpan="2" Background="#FFCBF4F6"/>
+        <TextBox x:Name="tbFolio" HorizontalAlignment="Left" Margin="188,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" FontSize="25" FontFamily="Segoe UI Light" Height="49" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

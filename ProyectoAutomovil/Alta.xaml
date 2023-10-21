@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="Alta" Height="450" Width="800">
-    <Grid>
+        Title="Alta" Height="450" Width="800" Icon="coche-ecologico.png">
+    <Grid Background="#FFBBC0F4">
         <Label Content="Marca" HorizontalAlignment="Left" Margin="41,50,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
         <Label Content="Submarca" HorizontalAlignment="Left" Margin="41,110,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
         <Label Content="Año" HorizontalAlignment="Left" Margin="41,170,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Light" FontSize="18"/>
@@ -19,8 +19,8 @@
         <TextBox x:Name="txtECO2" HorizontalAlignment="Left" Height="35" Margin="325,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtNOx" HorizontalAlignment="Left" Height="35" Margin="325,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
         <TextBox x:Name="txtEACO2" HorizontalAlignment="Left" Height="35" Margin="325,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontFamily="Segoe UI Light" FontSize="18"/>
-        <Button x:Name="btAlta" Content="Alta" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" Height="50" FontSize="20" Click="btAlta_Click"/>
-        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="631,215,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" FontSize="20" Click="btRegresar_Click" Height="50"/>
+        <Button x:Name="btAlta" Content="Alta" HorizontalAlignment="Left" Margin="631,110,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" Height="50" FontSize="20" Click="btAlta_Click" Background="#FFCBF4F6" BorderBrush="#FF0D3074"/>
+        <Button x:Name="btRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="631,215,0,0" VerticalAlignment="Top" Width="115" FontFamily="Segoe UI Light" FontSize="20" Click="btRegresar_Click" Height="50" BorderBrush="#FF0D3074" Background="#FFCBF4F6"/>
 
     </Grid>
 </Window>

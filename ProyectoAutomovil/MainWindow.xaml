@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="MainWindow" Height="274" Width="460">
-    <Grid Margin="0,0,115,65">
-        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="323,167,-86,-34" VerticalAlignment="Top" Width="100" Click="Button_Click" Height="45" FontSize="25" />
-        <Label Content="Usuario :" HorizontalAlignment="Left" Margin="66,65,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <Label Content="Contraseña :" HorizontalAlignment="Left" Margin="25,126,0,0" VerticalAlignment="Top" FontSize="25"/>
-        <TextBox x:Name="txUsuario" HorizontalAlignment="Left" Height="32" Margin="177,76,-22,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" RenderTransformOrigin="0.725,1.217" FontSize="20"/>
-        <TextBox x:Name="txPassword" HorizontalAlignment="Left" Height="33" Margin="177,135,-22,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="20"/>
+        Title="MainWindow" Height="313.287" Width="620.169" Icon="coche-ecologico.png">
+    <Grid Background="#FFBBC0F4">
+        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="426,208,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click" Height="50" FontSize="25" FontFamily="Segoe UI Light" BorderBrush="#FF0D3074" Background="#FFCBF4F6" />
+        <Label Content="Usuario :" HorizontalAlignment="Left" Margin="25,44,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Light"/>
+        <Label Content="Contraseña :" HorizontalAlignment="Left" Margin="25,148,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Segoe UI Light"/>
+        <TextBox x:Name="txUsuario" HorizontalAlignment="Left" Height="45" Margin="177,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" RenderTransformOrigin="0.725,1.217" FontSize="20" FontFamily="Segoe UI Light"/>
+        <TextBox x:Name="txPassword" HorizontalAlignment="Left" Height="45" Margin="177,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" FontSize="20" FontFamily="Segoe UI Light"/>
+        <Image HorizontalAlignment="Left" Height="147" Margin="426,44,0,0" VerticalAlignment="Top" Width="147" Source="coche-ecologico.png"/>
 
 
     </Grid>

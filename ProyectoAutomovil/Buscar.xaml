@@ -5,16 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoAutomovil"
         mc:Ignorable="d"
-        Title="Buscar" Height="396" Width="629">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="13*"/>
-            <ColumnDefinition Width="37*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="54,42,0,0" VerticalAlignment="Top" Height="57" Width="118"/>
-        <Button Content="Regresar" HorizontalAlignment="Left" Margin="312,0,0,0" VerticalAlignment="Center" Height="84" Width="114" Click="Button_Click_1" Grid.Column="1"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="312,65,0,0" VerticalAlignment="Top" Height="68" Width="114" Click="Button_Click" Grid.Column="1"/>
-        <DataGrid x:Name="dgDatos" HorizontalAlignment="Left" Margin="148,0,0,0" VerticalAlignment="Center" Height="190" Width="291" Grid.ColumnSpan="2" SelectionChanged="dgDatos_SelectionChanged"/>
-        <TextBox x:Name="TbID" HorizontalAlignment="Left" Height="22" Margin="148,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        Title="Buscar" Height="396" Width="629" Icon="coche-ecologico.png">
+    <Grid Background="#FFBBC0F4">
+        <Label Content="IdAuto" HorizontalAlignment="Left" Margin="54,48,0,0" VerticalAlignment="Top" Height="40" Width="89" FontSize="18" FontFamily="Segoe UI Light"/>
+        <Button Content="Regresar" HorizontalAlignment="Left" Margin="452,211,0,105.4" VerticalAlignment="Center" Height="50" Width="120" Click="Button_Click_1" FontFamily="Segoe UI Light" FontSize="18" Background="#FFCBF4F6"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="452,79,0,0" VerticalAlignment="Top" Height="50" Width="120" Click="Button_Click" FontFamily="Segoe UI Light" FontSize="18" Background="#FFCBF4F6"/>
+        <DataGrid x:Name="dgDatos" HorizontalAlignment="Left" Margin="54,141,0,35.4" VerticalAlignment="Center" Height="190" Width="352" SelectionChanged="dgDatos_SelectionChanged" FontFamily="Segoe UI Light" FontSize="18" Background="White"/>
+        <TextBox x:Name="TbID" HorizontalAlignment="Left" Height="50" Margin="148,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216"/>
     </Grid>
 </Window>
