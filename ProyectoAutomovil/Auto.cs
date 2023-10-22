@@ -111,6 +111,7 @@ namespace ProyectoAutomovil
             SqlConnection con = Conexion.agregarConexion();
             SqlCommand cmd = new SqlCommand(String.Format("UPDATE Automovil SET emisionCO2 = {0}, emisionNOx = {1}, emisionAnualCO2 = {2} WHERE idAut = '{3}'", a.emisionCO2, a.emisionNOx, a.emisionAnualCO2, a.idAut), con);
             res = cmd.ExecuteNonQuery();
+            con.Close();
             return res;
         }
 
