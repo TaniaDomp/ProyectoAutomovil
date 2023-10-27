@@ -26,11 +26,20 @@ namespace ProyectoAutomovil
 
         private void btBaja_Click(object sender, RoutedEventArgs e)
         {
-            Auto a = new Auto();
-            int res = a.eliminaAuto(tbFolio.Text);
+            try
+            {
+                Auto a = new Auto();
+                int res = a.eliminaAuto(tbFolio.Text);
 
-            if (res > 0)
-                MessageBox.Show("alumno eliminado");
+                if (res > 0)
+                    MessageBox.Show("alumno eliminado");
+                else
+                    MessageBox.Show("Error en la baja");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error en la operación");
+            }
         }
 
         private void btRegresar_Click(object sender, RoutedEventArgs e)
